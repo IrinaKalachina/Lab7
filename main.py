@@ -1,10 +1,10 @@
 import random
 
 # Функция для генерации массива случайных чисел
-def generate(): pass
+generate = lambda length: [random.randint(1, 100) for _ in range(length)]  # Включение в последовательность
 
 # Преобразование строки в список целых чисел
-def parse_input(): pass
+parse_input = lambda input_str: list(map(int, input_str.split()))
 
 # Задание 1: Сумма и сортировка массивов
 def task_1():
@@ -23,6 +23,8 @@ def task_1():
         elif v == '2':
             n = int(input('Введите количество элементов массива: '))
             # Генерация данных
+            arr1 = generate(n)
+            arr2 = generate(n)
             print('Массив 1:\n', arr1, '\nМассив 2:\n', arr2)
             break
         else:
@@ -53,6 +55,9 @@ def task_2():
         elif v == '2':
             n = int(input('Введите количество элементов массива: '))
             # Генерация данных
+            arr1 = generate(n)
+            arr2 = generate(n)
+            arr3 = generate(n)
             print('Массив 1:\n', arr1, '\nМассив 2:\n', arr2, '\nМассив 3:\n', arr3)
             break
         else:
@@ -85,6 +90,9 @@ def task_3():
         elif v == '2':
             n = int(input('Введите количество элементов массива: '))
             # Генерация данных
+            arr1 = generate(n)
+            arr2 = generate(n)
+            arr3 = generate(n)
             print('Массив 1:\n', arr1, '\nМассив 2:\n', arr2, '\nМассив 3:\n', arr3)
             break
         else:
